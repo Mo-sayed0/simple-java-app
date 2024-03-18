@@ -1,20 +1,23 @@
-node{
-    git branch: 'main' , url: 'https://github.com/Mo-sayed0/simple-java-app.git'
-    stage('build'){
-        try{
-        sh'echo "build stage"'
+pipeline{
+
+    agent any
+
+    stages{
+
+        stage('build'){
+            steps{
+                script{
+                    echo "build in progress"
+                }
+            }
         }
-        catch(Exception e){
-            sh'echo "excepttion found"'
-            throw e
-        }
-    }
-    stage('test'){
-        if (env.BRANCH_NAME == "feat"){
-            sh'echo "test stage"'
-        }
-        else {
-            sh'echo "skip test stage"'
+        
+        stage('test'){
+            steps{
+                script{
+                    echo "test in progress"
+                }
+            }
         }
     }
 }
