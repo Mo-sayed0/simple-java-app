@@ -6,6 +6,3 @@
 
 ### Run Tests
 ```mvn test```
-
-
-```mo-ci```
