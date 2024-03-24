@@ -5,7 +5,6 @@
 ```mvn clean package```
 
 ### Run Tests
-```mvn test```
+```mvn test``
 
-
-```mo-ci```
+```testing6-ci```
