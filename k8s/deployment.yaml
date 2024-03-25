@@ -17,7 +17,7 @@ spec:
         app: java-app
     spec:
       containers:
-        - name: java-app
+        - name: simple-java-app
           image: m0sayed/simple-java-app:latest
           ports:
             - containerPort: 80
