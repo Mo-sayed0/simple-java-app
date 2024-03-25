@@ -54,6 +54,8 @@ pipeline{
 
                     sh 'aws eks update-kubeconfig --region eu-central-1 --name eks'
 
+                    sh "sudo chmod -R 777 '${WORKSPACE}'"
+
                     sh 'kubectl apply -f ./k8s/deployment.yaml'
 
                     }
